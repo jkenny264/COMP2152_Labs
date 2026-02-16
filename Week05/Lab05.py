@@ -1,5 +1,5 @@
 # Week 05 Lab: Recursion & Functions - Starter Code
-# COMP2152 - Python Programming
+# COMP2152 - Python Programming .
 
 print("=" * 60)
 print("WEEK 05 LAB: RECURSION & FUNCTIONS")
