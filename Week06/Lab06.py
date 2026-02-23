@@ -362,22 +362,22 @@ def safe_read_log(filename):
     try:
         #     open the file in read mode
         with open(filename, "r") as file:
-    #     read the content
-        content = file.read()
-        #        if content is empty: print "Log file is empty." and return ""
+            #     read the content
+            content = file.read()
+            #        if content is empty: print "Log file is empty." and return ""
         if content == "":
             print("Log file is empty")
             return ""
-        #     else: return the content
+            #     else: return the content
         else:
             return content
     except FileNotFoundError:
-    #     print "No log file found. Run a diagnostic first."
-    #     return ""
+        #     print "No log file found. Run a diagnostic first."
+        #     return ""
         print("no log file found. run a diagnosic first")
         return ""
     finally:
-    #     print "Log read attempt completed."
+        #     print "Log read attempt completed."
         print("log read attempt completed")
 
 
@@ -546,5 +546,5 @@ def main():
 #  TEST YOUR WORK
 # ============================================================
 # After completing Tasks 1-3, uncomment the line below to run:
-# main()
+main()
 # ============================================================
