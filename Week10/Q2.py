@@ -68,7 +68,7 @@ def get_failed_attempts(username):
 #   Fetch all rows, close the connection, and return the list.
 def count_failures_per_user():
     with sqlite3.connect(DB_NAME) as conn:
-        conn.execute("SELECT username, COUNT(*) FROM login_attempts WHERE success = 0 GROUP BY username",
+        return conn.execute("SELECT username, COUNT(*) FROM login_attempts WHERE success = 0 GROUP BY username",
                      ).fetchall()
 
 # TODO: Complete delete_old_attempts(username)
